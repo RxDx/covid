@@ -1,0 +1,89 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Iso code:</strong>
+  <%= @report.iso_code %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @report.location %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @report.date %>
+</p>
+
+<p>
+  <strong>Total cases:</strong>
+  <%= @report.total_cases %>
+</p>
+
+<p>
+  <strong>New cases:</strong>
+  <%= @report.new_cases %>
+</p>
+
+<p>
+  <strong>Total deaths:</strong>
+  <%= @report.total_deaths %>
+</p>
+
+<p>
+  <strong>New deaths:</strong>
+  <%= @report.new_deaths %>
+</p>
+
+<p>
+  <strong>Integer:</strong>
+  <%= @report.integer %>
+</p>
+
+<p>
+  <strong>Total cases per million:</strong>
+  <%= @report.total_cases_per_million %>
+</p>
+
+<p>
+  <strong>New cases per million:</strong>
+  <%= @report.new_cases_per_million %>
+</p>
+
+<p>
+  <strong>Total deaths per million:</strong>
+  <%= @report.total_deaths_per_million %>
+</p>
+
+<p>
+  <strong>New deaths per million:</strong>
+  <%= @report.new_deaths_per_million %>
+</p>
+
+<p>
+  <strong>Total tests:</strong>
+  <%= @report.total_tests %>
+</p>
+
+<p>
+  <strong>New tests:</strong>
+  <%= @report.new_tests %>
+</p>
+
+<p>
+  <strong>Total tests per thousand:</strong>
+  <%= @report.total_tests_per_thousand %>
+</p>
+
+<p>
+  <strong>New tests per thousand:</strong>
+  <%= @report.new_tests_per_thousand %>
+</p>
+
+<p>
+  <strong>Tests units:</strong>
+  <%= @report.tests_units %>
+</p>
+
+<%= link_to 'Edit', edit_report_path(@report) %> |
+<%= link_to 'Back', reports_path %>

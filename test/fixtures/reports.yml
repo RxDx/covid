@@ -1,0 +1,39 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  iso_code: MyString
+  location: MyString
+  date: 2020-05-01
+  total_cases: 1
+  new_cases: 1
+  total_deaths: 1
+  new_deaths: MyString
+  integer: MyString
+  total_cases_per_million: 1
+  new_cases_per_million: 1
+  total_deaths_per_million: 1
+  new_deaths_per_million: 1
+  total_tests: 1
+  new_tests: 1
+  total_tests_per_thousand: 1
+  new_tests_per_thousand: 1
+  tests_units: 1
+
+two:
+  iso_code: MyString
+  location: MyString
+  date: 2020-05-01
+  total_cases: 1
+  new_cases: 1
+  total_deaths: 1
+  new_deaths: MyString
+  integer: MyString
+  total_cases_per_million: 1
+  new_cases_per_million: 1
+  total_deaths_per_million: 1
+  new_deaths_per_million: 1
+  total_tests: 1
+  new_tests: 1
+  total_tests_per_thousand: 1
+  new_tests_per_thousand: 1
+  tests_units: 1

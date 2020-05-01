@@ -1,0 +1,102 @@
+<%= form_with(model: report, local: true) do |form| %>
+  <% if report.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(report.errors.count, "error") %> prohibited this report from being saved:</h2>
+
+      <ul>
+        <% report.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :iso_code %>
+    <%= form.text_field :iso_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_field :location %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_select :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total_cases %>
+    <%= form.number_field :total_cases %>
+  </div>
+
+  <div class="field">
+    <%= form.label :new_cases %>
+    <%= form.number_field :new_cases %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total_deaths %>
+    <%= form.number_field :total_deaths %>
+  </div>
+
+  <div class="field">
+    <%= form.label :new_deaths %>
+    <%= form.text_field :new_deaths %>
+  </div>
+
+  <div class="field">
+    <%= form.label :integer %>
+    <%= form.text_field :integer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total_cases_per_million %>
+    <%= form.number_field :total_cases_per_million %>
+  </div>
+
+  <div class="field">
+    <%= form.label :new_cases_per_million %>
+    <%= form.number_field :new_cases_per_million %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total_deaths_per_million %>
+    <%= form.number_field :total_deaths_per_million %>
+  </div>
+
+  <div class="field">
+    <%= form.label :new_deaths_per_million %>
+    <%= form.number_field :new_deaths_per_million %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total_tests %>
+    <%= form.number_field :total_tests %>
+  </div>
+
+  <div class="field">
+    <%= form.label :new_tests %>
+    <%= form.number_field :new_tests %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total_tests_per_thousand %>
+    <%= form.number_field :total_tests_per_thousand %>
+  </div>
+
+  <div class="field">
+    <%= form.label :new_tests_per_thousand %>
+    <%= form.number_field :new_tests_per_thousand %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tests_units %>
+    <%= form.number_field :tests_units %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
