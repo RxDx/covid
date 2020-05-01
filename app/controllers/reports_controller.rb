@@ -8,6 +8,16 @@ class ReportsController < ApplicationController
   # GET /reports.json
   def index
     @reports = Report.all
+    unless params[:iso_code].blank?
+      @reports = @reports.where('lower(iso_code) = ?', params[:iso_code].downcase)
+    end
+    unless params[:location].blank?
+      @reports = @reports.where('lower(location) = ?', params[:location].downcase)
+    end
+    unless params[:date].blank?
+      @reports = @reports.where(date: params[:date])
+    end
+
   end
 
   def sync
@@ -39,7 +49,7 @@ class ReportsController < ApplicationController
         tests_units: row["tests_units"]
       )
     end
-    redirect_to reports_path
+  redirect_to reports_path
   end
 
   # GET /reports/1
